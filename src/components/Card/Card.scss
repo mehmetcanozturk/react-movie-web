@@ -1,13 +1,13 @@
 .card-container{
+    background-color: #000000;
     display: block;
     border-radius: 5px;
-    
     box-sizing: border-box;
     margin: 10px;
     position: relative;
     width: 200px;
     transition: 0.5s;
-    background-color: #000000;
+    
     cursor: pointer;
     .image{
         transition: 0.5s;
@@ -34,10 +34,7 @@
         opacity: 0;
 
         .title{
-            
             font-weight: 500;
-            margin-bottom: 5px;
-            
         }
         .vote{
             

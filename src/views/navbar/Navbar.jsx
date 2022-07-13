@@ -1,13 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Navbar.scss'
+
 
 function Navbar() {
     return (
         <div className="topnav">
-            <a className="active" href="#home">ReactFlix</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <Link to='/' className="active">ReactFlix</Link>
+            <Link to="/favorites">Favorites</Link>
+            <Link to='/contact'>Contact</Link>
         </div>
     )
 }

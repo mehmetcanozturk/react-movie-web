@@ -1,24 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { Route, Routes } from 'react-router';
 import './App.scss';
+import { MovieDb } from './services/movie_db';
+import Content from './views/Content/Content';
 import Navbar from './views/navbar/Navbar';
-import SliderCarousel from './views/SlideCarousel/SliderCarousel';
+import SliderShow from './views/SliderShow/SliderShow';
+
 
 
 function App() {
-  const [movies,setMovies]=useState([])
-  const apiURL = 'https://api.themoviedb.org/3/movie/top_rated?api_key=3a01017aaf287e88713b7c8edd51e903&language=en&page=1';
-    useEffect(() => {
-      fetch(apiURL).then(response => {
-        return response.json();
-      }).then(data => {
-        console.log(data);
-        setMovies(data.results)
-      });
-    }, []);
+  
   return (
     <div className="App">
       <Navbar/>
-      <SliderCarousel title="Filmler" list={movies}/>
+      <Routes>
+        <Route path='/' element={<Content/>}></Route>
+      </Routes>
+      
     </div>
   );
 }

@@ -1,14 +1,16 @@
 .carousel-container{
-    h3{
+    padding-top: 30px;
+    .carousel-container-title{
         text-align: left;
         color: #fff;
         font-weight: 600;
         font-size: 20px;
-        padding: 10px;
+        padding-left: 10px;
+        
     }
     .carousel-cards{
         background-color: #111;
-        padding: 20px 0;
+        padding: 15px 0;
     }
     
 

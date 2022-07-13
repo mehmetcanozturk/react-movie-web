@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import Card from '../../components/Card/Card'
@@ -7,18 +7,29 @@ import Card from '../../components/Card/Card'
 import "swiper/css";
 
 import "./SliderCarousel.scss";
+import { MovieDb } from "../../services/movie_db";
 
 function SliderCarousel(props) {
+
+  const [movies, setMovies] = useState([])
+    
+  useEffect(()=>{
+    MovieDb.getMovies(props.category,setMovies);
+  },[])
+
   return (
     <div className="carousel-container">
-      <h3>
+
+      <div className='carousel-cards'>
+      <div className="carousel-container-title">
             {props.title}
-      </h3>
-      <div className='carousel-cards'>      <div className='cards'>
+      </div>
+        <div className='cards'>
+
       <Swiper watchSlidesProgress={true} slidesPerView={7} className="mySwiper">
       {
-                props.list.map((data)=>{
-                   return <SwiperSlide><Card data={data}/></SwiperSlide>
+                movies.map((data,index)=>{
+                   return <SwiperSlide key={index}><Card data={data}/></SwiperSlide>
                 })
             }
 
