@@ -1,15 +1,15 @@
 .carousel-container{
-    height: 500px;
-    background-color: #111;
-    .title{
+    h3{
+        text-align: left;
+        color: #fff;
+        font-weight: 600;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .carousel-cards{
+        background-color: #111;
+        padding: 20px 0;
+    }
+    
 
-    }
-    .cards{
-        padding: 0 20px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-        overflow-y: hidden;
-    }
 }

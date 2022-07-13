@@ -6,7 +6,6 @@
     margin: 10px;
     position: relative;
     width: 200px;
-    height: 300px;
     transition: 0.5s;
     background-color: #000000;
     cursor: pointer;
@@ -14,6 +13,7 @@
         transition: 0.5s;
         overflow: hidden;
         img{
+            filter: grayscale(0);
             transition: 0.5s;
             width: 200px;
             height: 300px;
@@ -48,15 +48,15 @@
     &:hover{
         .detail{
             opacity: 1;
-            padding-bottom: 5px;
+            padding-bottom: 10px;
             transition: 0.5s;
         }
         img{
             transition: 0.5s;
             opacity: 0.3;
+            filter: grayscale(100%);
             transform: scale(1.1);
             object-fit: cover;
-
         }
     }
 }
