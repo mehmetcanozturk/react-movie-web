@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Routes } from 'react-router';
 import './App.scss';
-import { MovieDb } from './services/movie_db';
-import Content from './views/Content/Content';
+import Content from './pages/Content/Content';
+import FavoritesPage from './pages/FavoritesPage/FavoritesPage';
 import Navbar from './views/navbar/Navbar';
-import SliderShow from './views/SliderShow/SliderShow';
+
 
 
 
@@ -15,6 +15,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Content/>}></Route>
+        <Route path='/favorites' element={<FavoritesPage/>}></Route>
       </Routes>
       
     </div>

@@ -6,33 +6,30 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* width */
-::-webkit-scrollbar {
-  width: 3px;
 
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-
-  background: #161616;
-  opacity: 0.5;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 50px;
-  background: #aa0404;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #650000; 
-}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 body{
   background-color: #161616;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #161616;
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: #aa0404;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #650000; 
 }

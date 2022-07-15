@@ -2,7 +2,7 @@ export class MovieDb{
 
     static apiKey="3a01017aaf287e88713b7c8edd51e903"
     
-    static language="tr"
+    static language="en"
     
     static getMovies= async(category,setList) =>{
         const apiURL = 'https://api.themoviedb.org/3/movie/'+category+'?api_key='+MovieDb.apiKey+'&language='+MovieDb.language;

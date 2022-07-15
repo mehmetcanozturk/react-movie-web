@@ -17,10 +17,9 @@ function SliderShow(props) {
 
   const imagePath = "https://image.tmdb.org/t/p/original";
   const [movies, setMovies] = useState([])
-  const [fetching, setFetching] = useState(true)
 
   useEffect(() => {
-    MovieDb.getMovies(props.category, setMovies,setFetching);
+    MovieDb.getMovies(props.category, setMovies);
 
   }, [])
 

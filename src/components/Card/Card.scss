@@ -42,6 +42,12 @@
             font-weight: 900;
         }
     }
+    .likebtn{
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        opacity: 0;
+    }
     &:hover{
         .detail{
             opacity: 1;
@@ -55,5 +61,9 @@
             transform: scale(1.1);
             object-fit: cover;
         }
+        .likebtn{
+            opacity: 1;
+        }
+
     }
 }
