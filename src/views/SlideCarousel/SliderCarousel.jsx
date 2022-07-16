@@ -48,7 +48,7 @@ function SliderCarousel(props) {
         },
         "@1.50": {
           slidesPerView: 6,
-          spaceBetween: 50,
+          spaceBetween: 20,
         },
       }}
       className="mySwiper">

@@ -6,8 +6,10 @@
     margin: 10px;
     position: relative;
     width: 200px;
-    transition: 0.5s;
-    
+    transition: 0.2s;
+
+
+
     cursor: pointer;
     .image{
         transition: 0.5s;
@@ -44,11 +46,16 @@
     }
     .likebtn{
         position: absolute;
-        bottom: 15px;
+        top: 15px;
         right: 15px;
         opacity: 0;
-        font-size: 25px;
+        font-size: 20px;
         transition: 0.5s;
+    }
+    &:active{
+        transform: scale(1.1);
+        transition: 0.2s;
+
     }
     &:hover{
         .detail{
@@ -65,9 +72,11 @@
         }
         .likebtn{
             transition: 0.5s;
+            font-size: 22px;
             opacity: 1;
             
         }
+        
         
 
     }
