@@ -47,6 +47,8 @@
         bottom: 15px;
         right: 15px;
         opacity: 0;
+        font-size: 25px;
+        transition: 0.5s;
     }
     &:hover{
         .detail{
@@ -62,8 +64,11 @@
             object-fit: cover;
         }
         .likebtn{
+            transition: 0.5s;
             opacity: 1;
+            
         }
+        
 
     }
 }

@@ -1,9 +1,12 @@
 .like-button-container{
 
         .solid{
+            transition: 0.5s;
+            transform: scale(1.1);
             color:red;
         }
         .regular{
+            transition: 0.5s;
             color: #fff;
 
         }

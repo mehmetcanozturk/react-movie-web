@@ -1,7 +1,8 @@
 import { Global } from "./global";
 
 export class Favorites {
-    static likeList = []
+    static likeList = [] 
+    
 
     static getAllFavorites() {
         var values = [],
