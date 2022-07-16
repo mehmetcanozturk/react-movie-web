@@ -1,6 +1,6 @@
 export class MovieDb{
 
-    static apiKey="3a01017aaf287e88713b7c8edd51e903"
+    static apiKey="3f947269b2306b61f1623e01af666c79"
     
     static language="en"
     
