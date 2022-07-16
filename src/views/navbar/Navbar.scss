@@ -12,8 +12,25 @@
     background-color: rgba(22, 22, 22, 1);
     display: inline;
 
+    .logo-container{
+      float: left;
+      padding-right: 30px;
+      padding-left: 15px;
 
-    a {
+      height: 50px;
+      width: 50px;
+      display: inline-block;
+
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+
+    .navbar-link {
       float: left;
       color: #f2f2f2;
       text-align: center;
@@ -21,17 +38,18 @@
       text-decoration: none;
       font-size: 17px;
 
-      &:hover {
+
+      &:hover  {
         background-color: #ddd;
         color: black;
       }
 
+
       &.active {
-        background-color: #aa0404;
         color: white;
         font-weight: 600;
       }
     }
+
   }
 
-}

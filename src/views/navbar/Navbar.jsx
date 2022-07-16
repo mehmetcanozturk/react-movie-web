@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { Global } from '../../static/global'
 import './Navbar.scss'
 //import LanguageSwitcher from '../../components/LanguageSwitcher/LanguageSwitcher'
+import Logo from '../../assets/logo/logo.png'
 
 
 
@@ -14,9 +15,13 @@ function Navbar() {
     return (
         <div className='navbar'>
             <div className="topnav">
-                <Link to='/' onClick={() => changePage("content")} className="active">Film Website</Link>
-                <Link to="/favorites" onClick={() => changePage("favorites")} >Favorites</Link>
-                <Link to='/contact' onClick={() => changePage("contact")} >Contact</Link>
+                <Link to='/' onClick={() => changePage("content")} className="active">
+                    <div className='logo-container'>
+                        <img src={Logo} alt="" />
+                    </div>
+                </Link>
+                <Link className='navbar-link' to="/favorites" onClick={() => changePage("favorites")} >Favorites</Link>
+                <Link className='navbar-link' to='/contact' onClick={() => changePage("contact")} >Contact</Link>
             </div>
             <div className='lang-menu'>
                 
