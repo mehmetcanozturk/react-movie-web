@@ -12,6 +12,7 @@ import { MovieDb } from "../../services/movie_db";
 function SliderCarousel(props) {
 
   const [movies, setMovies] = useState([])
+  
     
   useEffect(()=>{
     MovieDb.getMovies(props.category,setMovies);
@@ -26,8 +27,33 @@ function SliderCarousel(props) {
       </div>
         <div className='cards'>
 
-      <Swiper watchSlidesProgress={true} slidesPerView={7} className="mySwiper">
+      <Swiper watchSlidesProgress={true} slidesPerView={7}
+      
+      breakpoints={{
+        "@0.00": {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        "@1.40": {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+        "@1.50": {
+          slidesPerView: 6,
+          spaceBetween: 50,
+        },
+      }}
+      className="mySwiper">
       {
+        
                 movies.map((data,index)=>{
                    return <SwiperSlide key={index}><Card data={data}/></SwiperSlide>
                 })
