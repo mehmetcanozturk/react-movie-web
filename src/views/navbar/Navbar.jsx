@@ -24,8 +24,8 @@ function Navbar() {
                 <Link className='navbar-link' to='/contact' onClick={() => changePage("contact")} >Contact</Link>
             </div>
             <div className='lang-menu'>
-                
-                
+
+
             </div>
         </div>
     )

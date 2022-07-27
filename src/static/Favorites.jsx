@@ -1,8 +1,8 @@
 import { Global } from "./global";
 
 export class Favorites {
-    static likeList = [] 
-    
+    static likeList = []
+
 
     static getAllFavorites() {
         var values = [],
@@ -18,9 +18,9 @@ export class Favorites {
 
     static addFavorites(data) {
         localStorage.setItem("like-" + data.id, JSON.stringify(data))
-        if(Global.pageName=="content"){
-            Favorites.likeList.map((item)=>{
-                if(data.id===item.id){
+        if (Global.pageName == "content") {
+            Favorites.likeList.map((item) => {
+                if (data.id === item.id) {
                     item.set(true)
                     console.log(item.id)
                 }
@@ -30,14 +30,14 @@ export class Favorites {
 
     static removeFavorites(data) {
         localStorage.removeItem("like-" + data.id)
-        if(Global.pageName==="favorites"){
+        if (Global.pageName === "favorites") {
             console.log("fav")
             const element = document.getElementsByName(data.id)[0]
             element.style.display = "none";
         }
-        if(Global.pageName=="content"){
-            Favorites.likeList.map((item)=>{
-                if(data.id===item.id){
+        if (Global.pageName == "content") {
+            Favorites.likeList.map((item) => {
+                if (data.id === item.id) {
                     item.set(false)
                     console.log(item.id)
                 }

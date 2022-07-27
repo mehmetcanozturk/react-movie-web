@@ -5,7 +5,7 @@ import './Card.scss'
 
 function Card(props) {
   const imagePath = "https://image.tmdb.org/t/p/w500";
-  
+
   return (
     <div name={props.data.id} className='card-container'>
       <div className='image'>
@@ -14,10 +14,10 @@ function Card(props) {
       <div className='detail'>
         <div className='title'>{props.data.title}</div>
         <div className='vote'>{props.data.vote_average}</div>
-        
+
       </div>
       <div className='likebtn'>
-        <LikeButton data={props.data}/>
+        <LikeButton data={props.data} />
       </div>
     </div>
   )

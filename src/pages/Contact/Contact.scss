@@ -1,0 +1,50 @@
+.contact-container {
+    background-color: #131313;
+    padding: 15px;
+    min-height: 400px;
+
+    .contact-header {
+        overflow: hidden;
+        display: inline-flex;
+        padding-bottom: 15px;
+
+        img {
+            height: 60px;
+            width: 60px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #aa0404;
+        }
+
+    }
+
+    .contact-content {
+        background-color: #111;
+        padding-left: 10px;
+        padding: 15px;
+        color: rgb(182, 182, 182);
+
+        font-size: 14px;
+        text-align: justify;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: 500;
+        }
+
+        .social-media {
+            margin-top: 15px;
+
+            .social-link {
+
+                margin-left: 7px;
+            }
+
+        }
+
+    }
+
+}

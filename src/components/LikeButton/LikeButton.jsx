@@ -6,30 +6,30 @@ import { faHeart as solidHeart } from '@fortawesome/free-solid-svg-icons'
 import { Favorites } from '../../static/Favorites';
 
 function LikeButton(props) {
-  
-  const [liked,setLiked] = useState(false);
-  
 
-  useEffect(()=>{
-    if(Favorites.IsFavorites(props.data)){
+  const [liked, setLiked] = useState(false);
+
+
+  useEffect(() => {
+    if (Favorites.IsFavorites(props.data)) {
       setLiked(true)
       console.log("like")
     }
     Favorites.likeList.push(
       {
-        "id":props.data.id,
-        "set":setLiked
+        "id": props.data.id,
+        "set": setLiked
       }
     );
-  },[])
-  
-  
-  const like =()=>{
-    if(liked){
+  }, [])
+
+
+  const like = () => {
+    if (liked) {
       Favorites.removeFavorites(props.data);
       setLiked(false);
     }
-    else{
+    else {
       Favorites.addFavorites(props.data);
       setLiked(true);
     }
@@ -37,8 +37,8 @@ function LikeButton(props) {
 
   return (
     <div className='like-button-container' onClick={like} >
-      { liked? <FontAwesomeIcon className='solid' icon={solidHeart} /> : <FontAwesomeIcon className='regular' icon={faHeart} /> }
-      </div>
+      {liked ? <FontAwesomeIcon className='solid' icon={solidHeart} /> : <FontAwesomeIcon className='regular' icon={faHeart} />}
+    </div>
   )
 }
 

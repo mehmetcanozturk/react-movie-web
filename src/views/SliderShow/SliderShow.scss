@@ -2,15 +2,17 @@
   width: 100%;
   height: 700px;
 }
-.swiper-pagination-bullet-active{
+
+.swiper-pagination-bullet-active {
   background-color: #aa0404 !important;
 }
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  
 
-  
+
+
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,14 +28,15 @@
   align-items: center;
 }
 
-.swipper-container{
+.swipper-container {
 
   width: 100%;
   height: 700px;
   position: relative;
 
-  .image-container{
+  .image-container {
     height: 100%;
+
     img {
       display: block;
       width: 100%;
@@ -42,24 +45,26 @@
     }
 
   }
-  .detail-container{
+
+  .detail-container {
     position: absolute;
     bottom: 0;
     color: #fff;
     text-align: left;
     padding: 0 20px;
     height: 700px;
-    background: linear-gradient(90deg, rgba(22,22,22,1) 15%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(90deg, rgba(22, 22, 22, 1) 15%, rgba(255, 255, 255, 0) 100%);
     width: 100%;
-    
-    .swipper-title{
+
+    .swipper-title {
       padding-top: 250px;
       font-size: 54px;
       width: 500px;
       font-weight: bold;
       color: #fff;
     }
-    .swipper-overview{
+
+    .swipper-overview {
       color: rgb(208, 208, 208);
       font-size: 14px;
       font-weight: 100;
@@ -75,4 +80,3 @@
 
 
 }
-

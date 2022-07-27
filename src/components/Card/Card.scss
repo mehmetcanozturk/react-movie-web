@@ -1,4 +1,4 @@
-.card-container{
+.card-container {
     background-color: #000000;
     display: block;
     border-radius: 5px;
@@ -11,10 +11,12 @@
 
 
     cursor: pointer;
-    .image{
+
+    .image {
         transition: 0.5s;
         overflow: hidden;
-        img{
+
+        img {
             filter: grayscale(0);
             transition: 0.5s;
             width: 200px;
@@ -22,29 +24,32 @@
             object-fit: cover;
         }
     }
-    .detail{
+
+    .detail {
         box-sizing: border-box;
         transition: 0.5s;
         width: 100%;
         padding-top: 50px;
         color: #fff;
-        background-image: linear-gradient(transparent , #000000);
+        background-image: linear-gradient(transparent, #000000);
         position: absolute;
         bottom: 0;
         padding: 0 10px;
         text-align: left;
         opacity: 0;
 
-        .title{
+        .title {
             font-weight: 500;
         }
-        .vote{
-            
+
+        .vote {
+
             font-size: 20px;
             font-weight: 900;
         }
     }
-    .likebtn{
+
+    .likebtn {
         position: absolute;
         top: 15px;
         right: 15px;
@@ -52,32 +57,36 @@
         font-size: 20px;
         transition: 0.5s;
     }
-    &:active{
+
+    &:active {
         transform: scale(1.1);
         transition: 0.2s;
 
     }
-    &:hover{
-        .detail{
+
+    &:hover {
+        .detail {
             opacity: 1;
             padding-bottom: 10px;
             transition: 0.5s;
         }
-        img{
+
+        img {
             transition: 0.5s;
             opacity: 0.3;
             filter: grayscale(100%);
             transform: scale(1.1);
             object-fit: cover;
         }
-        .likebtn{
+
+        .likebtn {
             transition: 0.5s;
             font-size: 22px;
             opacity: 1;
-            
+
         }
-        
-        
+
+
 
     }
 }

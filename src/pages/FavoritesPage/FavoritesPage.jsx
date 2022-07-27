@@ -9,10 +9,11 @@ function FavoritesPage() {
   return (
     <div className='favorites-page-container'>
       {
-        favorites.map((data,index)=>{
+        favorites.map((data, index) => {
           return <Card key={index} data={data} />
         })
       }
+
     </div>
   )
 }

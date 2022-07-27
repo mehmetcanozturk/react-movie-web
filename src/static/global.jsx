@@ -1,3 +1,3 @@
-export class Global{
-    static pageName="content"
+export class Global {
+    static pageName = "content"
 }
