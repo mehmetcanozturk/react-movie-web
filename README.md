@@ -1,5 +1,6 @@
-# Getting Started with Create React App
+# XLein Movie Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+This is my first react website project.
+Inspired by netflix web design.
+MovieDb API is used in this project.
 
