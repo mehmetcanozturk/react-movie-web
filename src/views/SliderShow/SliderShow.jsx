@@ -27,7 +27,7 @@ function SliderShow(props) {
 
   return (
     <Swiper
-      direction={"vertical"}
+
       autoplay={{
         delay: 2500,
         disableOnInteraction: false,
