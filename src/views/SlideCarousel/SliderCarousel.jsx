@@ -27,7 +27,7 @@ function SliderCarousel(props) {
         </div>
         <div className='cards'>
 
-          <Swiper watchSlidesProgress={true} slidesPerView={7}
+          <Swiper watchSlidesProgress={true} slidesPerView={'auto'}
 
             breakpoints={{
               "@0.00": {

@@ -10,7 +10,6 @@ export class MovieDb {
 
             return response.json();
         }).then((data) => {
-            console.log(data)
             setList(data.results);
         })
     }
@@ -20,7 +19,7 @@ export class MovieDb {
 
             return response.json();
         }).then((data) => {
-            console.log(data)
+
             setList(data.results);
         })
     }

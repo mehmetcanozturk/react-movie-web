@@ -13,7 +13,7 @@ function Contact() {
           <h1 >XLein Movie</h1>
         </div>
         <div className='contact-content'>
-          <h4>Hi Dear,</h4>
+          <h4>Hi Everyone,</h4>
           This is my first react website project. Inspired by netflix web design.
           <a href="https://www.themoviedb.org/documentation/api">MovieDb API</a> is used in this project.
 
